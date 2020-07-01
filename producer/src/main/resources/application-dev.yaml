@@ -1,0 +1,9 @@
+spring:
+  rabbitmq:
+    host: 10.172.0.187
+    port: 5672
+    username: lcm
+    password: lcm123
+    virtual-host: lcm_test
+    addresses:
+
