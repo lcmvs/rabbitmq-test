@@ -25,6 +25,11 @@ public class QueueProperty {
      */
     public static final String WORK_QUEUE="lcm.work.queue";
 
+    /**
+     * 批量队列
+     */
+    public static final String BATCH_QUEUE="lcm.batch.queue";
+
 
     /**
      * direct队列1

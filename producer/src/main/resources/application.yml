@@ -10,7 +10,7 @@ spring:
     #指定心跳超时，单位秒，0为不指定；默认60s
     requested-heartbeat: 10
     #发布确认类型
-    publisher-confirm-type: simple
+    publisher-confirm-type: correlated
     #是否支持发布回退
     publisher-returns: true
     #连接超时，单位毫秒，0表示无穷大

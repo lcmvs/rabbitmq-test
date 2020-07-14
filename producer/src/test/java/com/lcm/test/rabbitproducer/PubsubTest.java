@@ -19,7 +19,7 @@ public class PubsubTest {
     FanoutProducer fanoutProducer;
 
     @Test
-    public void test(){
+    public void test() throws InterruptedException {
         WorkMsg myMsg=new WorkMsg();
         myMsg.setMsgID(0L);
         myMsg.setName("lcm");
@@ -29,5 +29,6 @@ public class PubsubTest {
         fanoutProducer.send2(myMsg);
         myMsg.setMsgID(2L);
         fanoutProducer.send3(myMsg);
+        Thread.sleep(2000);
     }
 }

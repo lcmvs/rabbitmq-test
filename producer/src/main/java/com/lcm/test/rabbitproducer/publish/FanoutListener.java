@@ -18,6 +18,11 @@ public class FanoutListener {
         System.out.println(msg);
     }
 
+    @RabbitListener(queues = QueueProperty.PUBSUB_QUEUE_1)
+    public void pubsubProcess11(WorkMsg msg){
+        System.out.println(msg);
+    }
+
     @RabbitListener(queues = QueueProperty.PUBSUB_QUEUE_2)
     public void pubsubProcess2(WorkMsg msg){
         System.out.println(msg);
